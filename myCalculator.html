@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myCalculator</title>
+    <link rel="stylesheet" href="myCalculator.css">
+</head>
+
+<body>
+    <div id="contain">
+        <div id="calculator">
+            <h2 style="align-content: center; padding: 5px; margin: 5px;">CHIDINMA WEB CALCULATOR</h2>
+            <div id="calcView">
+                <div id="typeIn">
+                <div id="typeIn-value"></div>
+            </div>
+                <div id="result">
+                    <div id="result-value"></div>
+                </div>
+            </div>
+
+            <div id="keys">
+                <table>
+                    <!-- First Row -->
+                    <tr>
+                        <td><button class="button symbol" id="on/off" disabled>on/off</td>
+
+                        <td><button class="button symbol" id="BS" onclick="backsp ()" disabled>BS</td>
+
+                        <td><button class="button symbol" id="C" onclick="erase ()">C</td>
+
+                        <td><button class="button symbol" id="+" onclick="insertOp('+')">+</td>
+                    </tr>
+
+                    <!-- End of First Row -->
+
+
+                    <!-- Second Row -->
+
+                    <tr>
+                        <td><button class="button number" id="7" onclick="insertNum(7)">7</td>
+
+                        <td><button class="button number" id="8" onclick="insertNum(8)">8</td>
+
+                        <td><button class="button number" id="9" onclick="insertNum(9)">9</td>
+
+                        <td><button class="button symbol" id="-" onclick="insertOp('-')">-</td>
+                    </tr>
+
+                    <!-- End of Second Row -->
+
+
+                    <!-- Third Row -->
+
+                    <tr>
+                        <td><button class="button number" id="4" onclick="insertNum(4)">4</td>
+
+                        <td><button class="button number" id="5" onclick="insertNum(5)">5</td>
+
+                        <td><button class="button number" id="6" onclick="insertNum(6)">6</td>
+
+                        <td><button class="button symbol" id="/" onclick="insertOp('/')">/</td>
+                    </tr>
+
+                    <!-- End of Third Row -->
+
+
+                    <!-- Fourth Row -->
+
+                    <tr>
+                        <td><button class="button number" id="1" onclick="insertNum(1)">1</td>
+
+                        <td><button class="button number" id="2" onclick="insertNum(2)">2</td>
+
+                        <td><button class="button number" id="3" onclick="insertNum(3)">3</td>
+
+                        <td><button class="button symbol" id="x" onclick="insertOp('*')">x</td>
+                    </tr>
+
+                    <!-- End of Fourth Row -->
+
+
+                    <!-- Fifth Row -->
+
+                    <tr>
+                        <td><button class="button number" id="0" onclick="insertNum(0)">0</td>
+
+                        <td><button class="button symbol" id="." onclick="insertDec('.')">.</td>
+
+                        <td colspan="2"><button class="button symbol" id="="
+                                onclick="insertResult('=')">=</td>
+
+                    </tr>
+
+                    <!-- End of Fifth Row -->
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="JS/myCalculator.js"></script>
+</body>
+
+</html>

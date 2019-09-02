@@ -1,0 +1,81 @@
+body {
+    background-color: red;
+}
+
+#contain {
+    width: 1000px;
+    height: 550px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/maths.webp);
+    margin: 20px auto;
+}
+
+#calculator {
+    width: 400px;
+    height: 520px;
+    background-color: rgb(10, 14, 226);
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.button {
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    background-color:rgb(8, 133, 133);
+    outline: 5px;
+    outline-style: solid;
+    outline-color: rgba(0, 0, 0, 0.657);
+    cursor: pointer;
+
+}
+
+#calcView {
+    width: 300px;
+    height: 70px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 100rem;
+    background-color: white;
+}
+
+#typeIn-value {
+    padding: 5px;
+    margin: 5px;
+    color: rgb(139, 129, 129);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#result-value {
+    padding: 5px;
+    margin: 5px;
+    text-align: right;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.number {
+    font-weight: bold;
+}
+
+.symbol {
+    background-color: aqua;
+}
+
+.number:hover {
+    background-color: rgb(3, 77, 77);
+}
+
+.symbol:hover {
+    background-color: rgb(5, 189, 189);
+}
+
+
+
+
+
